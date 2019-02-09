@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hidden {
+	display: none;
+}
+
+iframe {
+	border: 0;
+}
+
+/*frameborder="0" style="border:0"*/
