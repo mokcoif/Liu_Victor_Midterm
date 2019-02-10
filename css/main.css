@@ -5,8 +5,440 @@
 	display: none;
 }
 
+/*HTML Selectors*/
+
+body {
+	font-family: 'Merriweather', Georgia, serif;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 16pt;
+	color: black;
+	background-color: #edeade;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font-family: 'Merriweather', Georgia, serif;
+	font-size: 45pt;
+	font-weight: 900;
+	text-align: center;
+	margin: 20px;
+}
+
+h3 {
+	font-family: 'Merriweather', Georgia, serif;
+	font-size: 20pt;
+	font-weight: 700;
+}
+
+hr {
+	display: block;
+	color: #7b7b7b;
+}
+
 iframe {
 	border: 0;
 }
 
-/*frameborder="0" style="border:0"*/
+/*Main Page Elements*/
+
+#siteContainer {
+	margin: 0 auto;
+	width: 1280px;
+}
+
+#siteHeader {
+	height: 270px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+	background-color: #6d83c5;
+}
+
+#logo {
+	width: 300px;
+	height: 264px;
+}
+
+#mainNav {
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#socialMedia {
+	margin: 0 auto;
+}
+
+#facebook, #twitter, #instagram, #googleplus {
+	margin-left: 29px;
+	height: 40px;
+}
+
+#facebook {
+	width: 32px;
+}
+
+#twitter {
+	width: 49px;
+}
+
+#instagram {
+	width: 39px;
+}
+
+#googleplus {
+	width: 40px;
+}
+
+#mainNav ul {
+	display: flex;
+	flex-direction: row;
+	margin-top: 40px;
+}
+
+#mainNav ul li a {
+	font-family:  'Merriweather', Georgia, serif;
+	display: block;
+	background-color: #afafaf;
+	color: #fff;
+	text-align: center;
+	padding: 8px;
+	margin: 5px;
+	font-size: 14pt;
+	border-radius: 7px;
+	background-color: #777;
+}
+
+#homeSection {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 35px;
+}
+
+#homeSection h2 {
+	margin-bottom: 40px;
+}
+
+#imageCarousel img {
+	display: block;
+	margin: 0 auto;
+}
+
+#aboutSection {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+#aboutSection h2 {
+	margin-bottom: 40px;
+}
+
+#aboutImages {
+	margin-top: 40px;
+	margin-bottom: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#aboutText {
+
+}
+
+#aboutPara {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 16pt;
+}
+
+#aboutPara p {
+	margin-top: 20px;
+}
+
+#aboutList {
+	margin-top: 40px;
+}
+
+#aboutList ul {
+	margin-top: 20px;
+	list-style-type: circle;
+}
+
+#aboutList ul li {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 18pt;
+	margin-top: 5px;
+}
+
+#pastEvents {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+#pastEvents h2 {
+	margin-bottom: 40px;
+}
+
+#eventMonth {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
+#brownTroutRelease {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#brownTrout {
+	display: flex;
+}
+
+#brownTroutImages {
+	display: flex;
+	flex-direction: column;
+}
+
+#brownTroutImages img {
+	width: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+}
+
+#brownTroutDesc {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-top: 13px;
+}
+
+#brownTroutDesc p {
+	margin-top: 7px;
+}
+
+#thamesCleanupEvent {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#thamesCleanup {
+	display: flex;
+}
+
+#thamesCleanupImages {
+	display: flex;
+	flex-direction: column;
+}
+
+#thamesCleanupImages img {
+	width: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+}
+
+#thamesCleanupDesc {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-top: 13px;
+}
+
+#thamesCleanupDesc p {
+	margin-top: 7px;
+}
+
+#projects {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+#projects h2 {
+	margin-bottom: 40px;
+}
+
+#projects > p::first-line {
+	font-weight: 700;
+	font-size: 18pt;
+}
+
+#projects p {
+	font-size: 16pt;
+}
+
+#projectsIntro {
+	font-weight: 700;
+	font-size: 18pt;
+	display: block;
+	margin-top: 10px;
+}
+
+#salmonidProgram {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#salmonidProgram h3 {
+	margin-bottom: 10px;
+}
+
+#salmonidProgram > p {
+	font-weight: 600;
+}
+
+#salmonidSection {
+	display: flex;
+}
+
+#salmonidImage img {
+	width: 200px;
+	padding: 20px;
+}
+
+#salmonidDesc {
+	padding-top: 20px;
+}
+
+.readMore {
+	color: #00006F;
+	text-decoration: underline;
+}
+
+#troutHatchery {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#troutHatchery h3 {
+	margin-bottom: 10px;
+}
+
+#troutHatchery > p {
+	font-weight: 600;
+}
+
+#troutHatcherySection {
+	display: flex;
+}
+
+#troutHatcheryImage img {
+	width: 200px;
+	padding: 20px;
+}
+
+#troutHatcheryDesc {
+	padding-top: 20px;
+}
+
+#newsletters {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+#newsletters p {
+	margin-bottom: 10px;
+	line-height: 25px;
+}
+
+#newsletters label, select {
+	margin-top: 30px;
+	display: block;
+	text-align: center;
+}
+
+#newsletters select {
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+#newsletterMonths {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#newsletterMonths li {
+	margin-top: 10px;
+}
+
+#contact {
+	margin-top: 35px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 35px;
+}
+
+#contactUs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#contactArea {
+	width: 600px;
+	margin-top: 20px;
+}
+
+#contactText {
+	font-size: 18pt;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+#contactForm {
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#contactForm label {
+	display: block;
+	font-size: 14pt;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+#name, #email, #phone, #message {
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+#submit {
+	display: block;
+	width: 100px;
+	background-color: #ccc;
+	margin: 0 auto;
+	margin-top: 20px;
+	font-weight: 600;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+}
+
+#location {
+	width: 600px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#location h3 {
+	padding-bottom: 20px;
+}
+
