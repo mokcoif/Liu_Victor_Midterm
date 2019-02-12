@@ -111,7 +111,6 @@ iframe {
 #mainNav ul li a {
 	font-family:  'Merriweather', Georgia, serif;
 	display: block;
-	background-color: #afafaf;
 	color: #fff;
 	text-align: center;
 	padding: 8px;
@@ -192,6 +191,13 @@ iframe {
 	font-size: 18pt;
 	margin-top: 5px;
 }
+
+#membershipData {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
 
 #pastEvents {
 	margin-top: 35px;
