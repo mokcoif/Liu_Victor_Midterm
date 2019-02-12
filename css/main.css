@@ -15,10 +15,6 @@ body {
 	background-color: #edeade;
 }
 
-a {
-	text-decoration: none;
-}
-
 h2 {
 	font-family: 'Merriweather', Georgia, serif;
 	font-size: 45pt;
@@ -75,6 +71,16 @@ iframe {
 	margin: 0 auto;
 }
 
+#socialMedia img:hover {
+	position: relative;
+	bottom: 2px;
+}
+
+#socialMedia img:active {
+	position: relative;
+	top: 4px;
+}
+
 #facebook, #twitter, #instagram, #googleplus {
 	margin-left: 29px;
 	height: 40px;
@@ -115,6 +121,19 @@ iframe {
 	background-color: #777;
 }
 
+#mainNav ul li a:hover {
+	background-color: #6F6F6F;
+	position: relative;
+	bottom: 2px;
+}
+
+#mainNav ul li a:active {
+	position: relative;
+	top: 4px;
+	box-shadow: 3px 3px 5px #555;
+	background-color: #666;
+}
+
 #homeSection {
 	margin-left: 40px;
 	margin-right: 40px;
@@ -123,11 +142,6 @@ iframe {
 
 #homeSection h2 {
 	margin-bottom: 40px;
-}
-
-#imageCarousel img {
-	display: block;
-	margin: 0 auto;
 }
 
 #aboutSection {
@@ -313,7 +327,7 @@ iframe {
 	padding-top: 20px;
 }
 
-.readMore {
+.readMore a {
 	color: #00006F;
 	text-decoration: underline;
 }
@@ -374,6 +388,20 @@ iframe {
 
 #newsletterMonths li {
 	margin-top: 10px;
+}
+
+#newsletterMonths li a {
+	color: #00006F;
+}
+
+#newsletterMonths li a:hover {
+	position: relative;
+	bottom: 2px;
+}
+
+#newsletterMonths li a:active {
+	position: relative;
+	top: 4px;
 }
 
 #contact {
@@ -442,3 +470,124 @@ iframe {
 	padding-bottom: 20px;
 }
 
+/*CSS3 Animations*/
+
+@keyframes carousel {
+	0% {
+		background: url("../images/carousel-img1.jpg") no-repeat;
+	}
+
+	33% {
+		background: url("../images/carousel-img2.jpg") no-repeat;
+	}
+
+	67% {
+		background: url("../images/carousel-img3.jpg") no-repeat;
+	}
+
+	100% {
+		background: url("../images/carousel-img1.jpg") no-repeat;
+	}
+}
+
+@keyframes carouselHighlight1 {
+	0% {
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	33% {
+		background-color: rgba(255,255,255,0.5);
+	}
+
+	67% {
+		background-color: rgba(255,255,255,0.5);
+	}
+
+	100% {
+		background-color: rgba(0,0,0,0.5);
+	}
+}
+
+@keyframes carouselHighlight2 {
+	0% {
+		background-color: rgba(255,255,255,0.5);
+	}
+
+	33% {
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	67% {
+		background-color: rgba(255,255,255,0.5);
+	}
+
+	100% {
+		background-color: rgba(255,255,255,0.5);
+	}
+}
+
+@keyframes carouselHighlight3 {
+	0% {
+		background-color: rgba(255,255,255,0.5);
+	}
+
+	33% {
+		background-color: rgba(255,255,255,0.5);
+	}
+
+	67% {
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	100% {
+		background-color: rgba(255,255,255,0.5);
+	}
+}
+
+#imageCarousel {
+	height: 750px;
+	width: 1000px;
+	margin: 0 auto;
+	animation-duration: 20s;
+	animation-name: carousel;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0, .75, 1, 3);
+	animation-delay: -2s;
+	overflow: hidden;
+}
+
+.carouselDot {
+	height: 20px;
+	width: 20px;
+	margin: 5px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 100%;
+	display: inline-block;
+	position: relative;
+	top: 95%;
+	left: 45%;
+}
+
+#img1 {
+	animation-name: carouselHighlight1;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0, .75, 1, 3);
+	animation-delay: -2s;
+}
+
+#img2 {
+	animation-name: carouselHighlight2;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0, .75, 1, 3);
+	animation-delay: -2s;
+}
+
+#img3 {
+	animation-name: carouselHighlight3;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0, .75, 1, 3);
+	animation-delay: -2s;
+}
